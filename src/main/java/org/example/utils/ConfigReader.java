@@ -11,7 +11,7 @@ public class ConfigReader {
 
     static {
         try {
-            String path = "C:\\Users\\user\\IdeaProjects\\Talent_UI\\src\\main\\resources\\app.properties";
+            String path = "src/main/resources/app.properties";
             FileInputStream fileInputStream = new FileInputStream(path);
             properties = new Properties();
             properties.load(fileInputStream);
@@ -29,5 +29,6 @@ public class ConfigReader {
 
     public static void main(String[] args) {
         System.out.println(getProperties("typeBrowser"));
+        System.out.println(getProperties("userInvalidLogin"));
     }
 }
